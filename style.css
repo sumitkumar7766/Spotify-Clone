@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 340px;
+    background-color: black;
+    margin-right: 0.75rem;
+}
+
+.main-containt {
+    background-color: black;
+    flex: 1;
+    overflow: auto;
+}
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.8rem;
+}
+
+.nav-optin {
+    line-height: 40px;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.nav-optin:hover {
+    opacity: 1;
+}
+
+.nav-optin i {
+    font-size: 1.25rem;
+    padding-right: 1rem;
+    padding-left: 0.7rem;
+}
+
+.nav-optin img {
+    padding-right: 0.5rem;
+}
+
+.nav-optin a {
+    font-size: 1rem;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.8rem;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-opt img {
+    height: 1rem;
+    width: 1.25rem;
+}
+
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+.box {
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.8rem;
+    /* margin: 0.25rem 0 0.5rem 0;  */
+    padding: 1rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 1.75rem;
+}
+
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box-p2 {
+    font-size: 0.75rem;
+    opacity: 0.9;
+
+}
+
+.badge {
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.stickey-nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    z-index: 10;
+}
+
+.leftrtarrow {
+    padding-left: 1rem;
+}
+
+.leftrtarrow img {
+    padding-right: 1rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.leftrtarrow img:hover {
+    opacity: 1;
+}
+
+.rightbuttcoll {
+    height: auto;
+    width: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rightbuttcoll button,i{
+    cursor: pointer;
+}
+
+.badge1 {
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.dark-badge {
+    background-color: #000000;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+.cards {
+    margin-top: 1rem;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.cards h2 {
+    padding: 1rem;
+}
+
+.card {
+    background-color: #121212;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1.3rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-info {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.card .play-icondiv {
+    position: relative;
+    height: 2rem;
+    top: -128px;
+    left: 110px;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    height: 50%;
+    width: 90%;
+    border-top: 1px solid #ffffff;
+}
+
+.mainmusic {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    background-color: black;
+    height: 100%;
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left img {
+    height: 3.5rem;
+    border-radius: 0.5rem;
+}
+
+.mid {
+    background-color: black;
+    height: 100%;
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    background-color: black;
+    height: 100%;
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right p {
+    opacity: 0.3;
+}
+
+.detailss {
+    margin-right: 35px;
+    opacity: 0.75;
+}
+
+.left i {
+    opacity: 0.75;
+}
+
+.player-centrol-icon {
+    height: 1.3rem;
+    padding-bottom: 0.7rem;
+    opacity: 0.8;
+}
+
+.prograce-centrole {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.prograce-bar {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prograce4 {
+    width: 60%;
+    padding-left: 20rem;
+    padding-right: 0.4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    appearance: none;
+    border-radius: 10px;
+    height: 3px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.prograce4::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: #1bd780;
+    margin-top: -4px;
+}
+
+.prograce4::-webkit-slider-runnable-track {
+    background-color: white;
+    border-radius: 100px;
+    height: 0.2rem;
+    justify-content: center;
+    align-items: center;
+
+}
